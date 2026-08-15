@@ -1,0 +1,10 @@
+<svg width="360" height="100" viewBox="0 0 360 100" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="88" height="88" rx="22" fill="#0B1B2B"/>
+  <path d="M22 44 H36" stroke="#2F6FED" stroke-width="2.5" stroke-linecap="round" opacity="0.55"/>
+  <circle cx="20" cy="44" r="2.5" fill="#2F6FED" opacity="0.55"/>
+  <path d="M78 30 L58 60 H70 L65 78 L86 46 H72 Z" fill="#2F6FED"/>
+  <text x="108" y="46" font-family="'Space Grotesk', 'Arial', sans-serif" font-weight="700" font-size="34" letter-spacing="0.5" fill="#0B1B2B">BR ELEC</text>
+  <text x="109" y="70" font-family="'Space Grotesk', 'Arial', sans-serif" font-weight="500" font-size="14" letter-spacing="3" fill="#2F6FED">ARTISAN &#201;LECTRICIEN</text>
+  <path d="M109 76 H330" stroke="#E8A33D" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="332" cy="76" r="2.5" fill="#E8A33D"/>
+</svg>
