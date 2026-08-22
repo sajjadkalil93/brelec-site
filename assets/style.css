@@ -651,61 +651,75 @@ header.site.over-hero.solid .logo-light { display: none; }
   inset: 0;
   z-index: 1;
   background:
-    linear-gradient(180deg, rgba(5,12,22,0.55) 0%, rgba(5,12,22,0.12) 34%, rgba(5,12,22,0.05) 55%, rgba(5,12,22,0.42) 100%);
+    radial-gradient(560px 380px at 88% 82%, rgba(5,12,22,0.5), transparent 70%),
+    linear-gradient(180deg, rgba(5,12,22,0.4) 0%, transparent 22%, transparent 72%, rgba(5,12,22,0.32) 100%);
   pointer-events: none;
 }
 .cine-copy {
   position: absolute;
-  inset: 0;
+  right: clamp(24px, 5vw, 72px);
+  bottom: clamp(72px, 12vh, 120px);
+  left: auto;
+  top: auto;
   z-index: 2;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+  align-items: flex-end;
+  text-align: right;
   color: #fff;
-  padding: 0 28px;
+  max-width: min(480px, 78vw);
+  padding: 0;
   opacity: 0;
-  transform: translateY(30px);
+  transform: translateY(24px);
   pointer-events: none;
   will-change: opacity, transform;
+}
+.cine-copy::after {
+  content: '';
+  margin-top: 20px;
+  width: 120px;
+  height: 1.5px;
+  background: linear-gradient(90deg, transparent, rgba(92,147,255,0.9));
+  box-shadow: 0 0 10px rgba(92,147,255,0.7);
 }
 .cine-copy.interactive { pointer-events: auto; }
 .cine-kicker {
   font-family: 'JetBrains Mono', monospace;
-  font-size: clamp(11px, 1.3vw, 13.5px);
-  font-weight: 600;
-  letter-spacing: 0.22em;
+  font-size: clamp(10px, 1vw, 12px);
+  font-weight: 500;
+  letter-spacing: 0.26em;
   text-transform: uppercase;
-  color: #9CC0FF;
-  margin-bottom: 22px;
-  text-shadow: 0 2px 14px rgba(0,0,0,0.45);
+  color: rgba(156,192,255,0.85);
+  margin-bottom: 14px;
+  text-shadow: 0 0 12px rgba(92,147,255,0.55);
 }
 .cine-title {
   font-family: 'Space Grotesk', sans-serif;
-  font-weight: 700;
-  font-size: clamp(38px, 7vw, 84px);
-  line-height: 1.03;
-  letter-spacing: -0.015em;
-  max-width: 17ch;
-  text-shadow: 0 4px 30px rgba(0,0,0,0.5);
+  font-weight: 600;
+  font-size: clamp(22px, 2.6vw, 34px);
+  line-height: 1.18;
+  letter-spacing: 0.005em;
+  max-width: 20ch;
+  color: rgba(255,255,255,0.96);
+  text-shadow: 0 0 18px rgba(92,147,255,0.35), 0 2px 18px rgba(0,0,0,0.55);
 }
-.cine-title .glow { color: #5C93FF; text-shadow: 0 0 26px rgba(92,147,255,0.65); }
+.cine-title .glow { color: #7FA8FF; text-shadow: 0 0 20px rgba(92,147,255,0.8); }
 .cine-sub {
-  margin-top: 24px;
-  font-size: clamp(15.5px, 1.9vw, 19px);
-  color: rgba(255,255,255,0.86);
-  max-width: 52ch;
-  line-height: 1.6;
-  text-shadow: 0 2px 16px rgba(0,0,0,0.5);
+  margin-top: 12px;
+  font-size: clamp(12.5px, 1.15vw, 14.5px);
+  color: rgba(214,228,248,0.78);
+  max-width: 44ch;
+  line-height: 1.65;
+  text-shadow: 0 1px 12px rgba(0,0,0,0.6);
 }
 .cine-actions {
-  margin-top: 34px;
+  margin-top: 22px;
   display: flex;
-  gap: 14px;
+  gap: 12px;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-end;
 }
+.cine-actions .btn { padding: 10px 20px; font-size: 13.5px; }
 .btn-glass {
   background: rgba(255,255,255,0.1);
   border-color: rgba(255,255,255,0.35);
@@ -818,7 +832,9 @@ header.site.over-hero.solid .logo-light { display: none; }
 @media (max-width: 900px) {
   .cine { height: 300vh; }
   .b2b-grid { grid-template-columns: 1fr; }
-  .cine-sub { max-width: 38ch; }
+  .cine-copy { right: 20px; bottom: 88px; max-width: 82vw; }
+  .cine-title { font-size: 19px; }
+  .cine-sub { max-width: 34ch; font-size: 12.5px; }
 }
 @media (max-width: 560px) {
   .cine-actions .btn { padding: 12px 18px; font-size: 14px; }
