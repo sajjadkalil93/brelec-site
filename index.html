@@ -303,6 +303,7 @@
       }
       el.style.opacity = o;
       el.style.transform = 'translateY(' + ty + 'px)';
+      el.classList.toggle('interactive', o > 0.5);
     });
 
     // Crossfade to white background at the end
