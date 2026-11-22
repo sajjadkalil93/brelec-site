@@ -53,7 +53,7 @@
           </div>
           <div>
             <div class="label">Email</div>
-            <a class="value" href="mailto:badissb@outlook.fr" style="display:block;">badissb@outlook.fr</a>
+            <a class="value" href="mailto:contact@brelec.fr" style="display:block;">contact@brelec.fr</a>
           </div>
         </div>
         <div class="contact-row">
@@ -91,7 +91,7 @@
     <div class="contact-card">
       <h3 style="font-size:20px; margin-bottom:6px;">Demander un devis</h3>
       <p style="color:#7A8A9C; font-size:14px; margin-bottom:22px;">Réponse sous 24 à 48h ouvrées.</p>
-      <form class="quote" action="mailto:badissb@outlook.fr" method="post" enctype="text/plain">
+      <form class="quote" id="quote-form" action="#" method="get">
         <div class="field-row">
           <div>
             <label for="nom">Nom</label>
@@ -147,7 +147,7 @@
         <h4>Contact</h4>
         <ul>
           <li><a href="tel:+33625347654">06 25 34 76 54</a></li>
-          <li><a href="mailto:badissb@outlook.fr">badissb@outlook.fr</a></li>
+          <li><a href="mailto:contact@brelec.fr">contact@brelec.fr</a></li>
           <li>Drancy (93700) &amp; Île-de-France</li>
         </ul>
       </div>
@@ -159,5 +159,14 @@
   </div>
 </footer>
 
+<script>
+document.getElementById('quote-form').addEventListener('submit',function(e){
+  e.preventDefault();
+  var f=e.target,v=function(n){return (f.elements[n].value||'').trim();};
+  var subject='Demande de devis - '+v('type');
+  var body='Nom : '+v('nom')+'\nTéléphone : '+v('tel')+'\nEmail : '+v('email')+'\nType de besoin : '+v('type')+'\n\n'+v('message');
+  window.location.href='mailto:contact@brelec.fr?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
+});
+</script>
 </body>
 </html>
