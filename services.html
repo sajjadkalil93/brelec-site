@@ -2,29 +2,58 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>Prestations — BR ELEC, artisan électricien</title>
-<meta name="description" content="Dépannage électrique, tableaux, rénovation, éclairage, VMC : toutes les prestations de BR ELEC, artisan électricien à Drancy et en Île-de-France.">
-<link rel="icon" type="image/svg+xml" href="assets/logo-mark.svg">
-<link rel="stylesheet" href="assets/style.css?v=3">
+<meta name="description" content="Dépannage, tableaux, rénovation, éclairage, réseau, vidéosurveillance : toutes les prestations de BR ELEC, artisan électricien à Drancy et 15 km autour.">
+<link rel="canonical" href="https://www.brelec.fr/services">
+<meta name="theme-color" content="#0B1B2B">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="BR ELEC">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="Prestations — BR ELEC, artisan électricien">
+<meta property="og:description" content="Dépannage, tableaux, rénovation, éclairage, réseau, vidéosurveillance : toutes les prestations de BR ELEC, artisan électricien à Drancy et 15 km autour.">
+<meta property="og:url" content="https://www.brelec.fr/services">
+<meta property="og:image" content="https://www.brelec.fr/assets/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/svg+xml" href="/assets/logo-mark.svg">
+<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+<link rel="preload" as="font" type="font/woff2" href="/assets/fonts/inter-latin-400-normal.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="/assets/fonts/space-grotesk-latin-700-normal.woff2" crossorigin>
+<link rel="stylesheet" href="/assets/style.css?v=4">
+<script>document.documentElement.className += ' js';</script>
 </head>
 <body>
+<a class="skip" href="#contenu">Aller au contenu</a>
 
-<header class="site">
+<header class="site" id="siteHeader">
   <div class="wrap site-nav">
-    <a href="index.html" class="brand"><img src="assets/logo-full.svg" alt="BR ELEC — Artisan électricien"></a>
-    <nav class="links">
-      <a href="index.html">Accueil</a>
-      <a href="services.html" class="current">Prestations</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-    <a href="tel:+33625347654" class="btn btn-primary">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-      06 25 34 76 54
-    </a>
+    <a href="/" class="brand"><img src="/assets/logo-full.svg" alt="BR ELEC — Artisan électricien" width="166" height="46"></a>
+    <nav class="links" aria-label="Navigation principale"><a href="/">Accueil</a><a href="/services" class="current" aria-current="page">Prestations</a><a href="/realisations">Réalisations</a><a href="/contact">Contact</a></nav>
+    <a href="tel:+33625347654" class="btn btn-primary header-call"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>06 25 34 76 54</a>
+    <button class="burger" id="burger" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mnav">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
   </div>
 </header>
 
+<div class="mnav" id="mnav" hidden>
+  <div class="mnav-top">
+    <img src="/assets/logo-full-white.svg" alt="BR ELEC" width="166" height="46">
+    <button class="mnav-close" id="mnavClose" type="button" aria-label="Fermer le menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+  </div>
+  <nav class="mnav-links" aria-label="Menu"><a href="/">Accueil</a><a href="/services" class="current" aria-current="page">Prestations</a><a href="/realisations">Réalisations</a><a href="/contact">Contact &amp; devis</a></nav>
+  <div class="mnav-foot">
+    <div class="mono">Lundi – samedi · urgences selon disponibilité</div>
+    <a class="mnav-call" href="tel:+33625347654"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>06 25 34 76 54</a>
+    <p>Drancy · Le Blanc-Mesnil · 15 km autour</p>
+  </div>
+</div>
+
+<main id="contenu">
 <section class="hero" style="padding:56px 0 48px;">
   <div class="wrap">
     <div class="eyebrow"><span class="dot"></span>Prestations</div>
@@ -35,9 +64,10 @@
 
 <section class="tight">
   <div class="wrap">
+    <h2 class="sr-only">Toutes les prestations</h2>
     <div class="grid-3">
 
-      <div class="card">
+      <div class="card reveal">
         <div class="icon-badge">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h7l-1 8 10-12h-7l1-8z"/></svg>
         </div>
@@ -50,7 +80,7 @@
         </ul>
       </div>
 
-      <div class="card">
+      <div class="card reveal">
         <div class="icon-badge">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="9" y1="6" x2="15" y2="6"/><line x1="9" y1="10" x2="15" y2="10"/><line x1="9" y1="14" x2="15" y2="14"/></svg>
         </div>
@@ -63,7 +93,7 @@
         </ul>
       </div>
 
-      <div class="card">
+      <div class="card reveal">
         <div class="icon-badge">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="7" width="15" height="10" rx="2"/><circle cx="7" cy="12" r="1.5" fill="currentColor" stroke="none"/><circle cx="11" cy="12" r="1.5" fill="currentColor" stroke="none"/></svg>
         </div>
@@ -76,7 +106,7 @@
         </ul>
       </div>
 
-      <div class="card">
+      <div class="card reveal">
         <div class="icon-badge">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.2" y1="4.2" x2="5.6" y2="5.6"/><line x1="18.4" y1="18.4" x2="19.8" y2="19.8"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/></svg>
         </div>
@@ -89,7 +119,7 @@
         </ul>
       </div>
 
-      <div class="card">
+      <div class="card reveal">
         <div class="icon-badge">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h4l3 8 4-16 3 8h4"/></svg>
         </div>
@@ -102,7 +132,7 @@
         </ul>
       </div>
 
-      <div class="card">
+      <div class="card reveal">
         <div class="icon-badge">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M8 12a4 4 0 0 1 8 0"/><line x1="12" y1="16" x2="12" y2="20"/></svg>
         </div>
@@ -115,80 +145,134 @@
         </ul>
       </div>
 
+
+      <div class="card reveal">
+        <div class="icon-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="4" width="18" height="6" rx="1.5"/><rect x="3" y="14" width="18" height="6" rx="1.5"/><path d="M7 7h.01M7 17h.01M11 7h6M11 17h6"/></svg>
+        </div>
+        <h3>Réseau &amp; courants faibles</h3>
+        <p>Un réseau propre et repéré, du logement au local professionnel.</p>
+        <ul class="card-list"><li>Câblage réseau et prises RJ45</li><li>Coffret de communication</li><li>Baie de brassage pour les professionnels</li></ul>
+      </div>
+
+      <div class="card reveal">
+        <div class="icon-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 7l12-3 1 4-12 3z"/><path d="M9 10.5V15h4"/><path d="M13 13v6"/><circle cx="18.5" cy="6" r="1.5"/></svg>
+        </div>
+        <h3>Vidéosurveillance &amp; détection</h3>
+        <p>Sécuriser un logement, un commerce ou un accès.</p>
+        <ul class="card-list"><li>Pose de caméras</li><li>Détecteurs de mouvement</li><li>Éclairage à détection</li></ul>
+      </div>
+
+      <div class="card reveal">
+        <div class="icon-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 21V9l9-6 9 6v12"/><path d="M8 21v-7h8v7"/><path d="M8 17h8"/></svg>
+        </div>
+        <h3>Motorisation de portail</h3>
+        <p>Alimentation et raccordement d'une motorisation, en neuf ou sur portail existant.</p>
+        <ul class="card-list"><li>Motorisation de portail</li><li>Alimentation électrique extérieure</li><li>Raccordement et mise en service</li></ul>
+      </div>
     </div>
   </div>
 </section>
 
+
 <section class="on-mist">
-  <div class="wrap grid-2" style="align-items:center;">
-    <div>
+  <div class="wrap grid-2" style="align-items:center; gap:48px;">
+    <div class="reveal">
       <div class="eyebrow"><span class="dot"></span>Zone d'intervention</div>
-      <h2>Jusqu'à 15 km autour de Drancy, au-delà sur devis</h2>
-      <p style="margin-top:14px; color:#45566B;">J'interviens chez les particuliers comme pour les commerces et bureaux — installations neuves, rénovations, ou simple mise en conformité d'un appartement.</p>
-      <div class="zone-tags">
-        <span>Drancy</span>
-        <span>Le Blanc-Mesnil</span>
-        <span>Bobigny</span>
-        <span>Aulnay-sous-Bois</span>
-        <span>Saint-Denis</span>
-        <span>Paris nord-est</span>
-        <span>Seine-Saint-Denis (93)</span>
-      </div>
+      <h2 style="font-size:clamp(26px,3.2vw,36px);">15 km autour de Drancy, au-delà sur devis</h2>
+      <p style="margin:14px 0 22px; color:#4A5B70;">BR ELEC est installé au Blanc-Mesnil et se déplace chez les particuliers comme pour les commerces et bureaux, du lundi au samedi.</p>
+      <div class="city-links"><a href="/electricien-drancy">Drancy</a><a href="/electricien-le-blanc-mesnil">Le Blanc-Mesnil</a><a href="/electricien-bobigny">Bobigny</a><a href="/electricien-aulnay-sous-bois">Aulnay-sous-Bois</a><a href="/electricien-le-bourget">Le Bourget</a><a href="/electricien-saint-denis">Saint-Denis</a></div>
     </div>
-    <div class="zone-box">
-      <img src="assets/photos/tableau-electrique-03.jpg" alt="Tableau électrique Hager posé par BR ELEC" style="border-radius:12px;">
+    <figure class="map-card reveal" style="margin:0;">
+      <svg class="zone-map" viewBox="0 0 600 600" role="group" aria-label="Carte schématique de la zone d'intervention : 15 km autour de Drancy"><circle class="ring main" cx="300.0" cy="300.0" r="277.5"/><circle class="ring" cx="300.0" cy="300.0" r="92.5"/><text class="ring-label" x="300.0" y="386.5" text-anchor="middle">5 KM</text><circle class="ring" cx="300.0" cy="300.0" r="185.0"/><text class="ring-label" x="300.0" y="479.0" text-anchor="middle">10 KM</text><text class="ring-label main" x="300.0" y="568.5" text-anchor="middle">15 KM</text><g class="city minor"><circle class="dot" cx="233.5" cy="291.8" r="3"/><text x="224.5" y="306.8" text-anchor="end">La Courneuve</text></g><g class="city minor"><circle class="dot" cx="350.4" cy="344.2" r="3"/><text x="360.4" y="348.2" text-anchor="start">Bondy</text></g><g class="city minor"><circle class="dot" cx="251.2" cy="360.3" r="3"/><text x="241.2" y="364.3" text-anchor="end">Pantin</text></g><g class="city minor"><circle class="dot" cx="408.6" cy="267.1" r="3"/><text x="416.6" y="261.1" text-anchor="start">Sevran</text></g><g class="city minor"><circle class="dot" cx="214.4" cy="384.3" r="3"/><text x="204.4" y="388.3" text-anchor="end">Paris nord-est</text></g><g class="city minor"><circle class="dot" cx="422.3" cy="309.7" r="3"/><text x="432.3" y="314.7" text-anchor="start">Livry-Gargan</text></g><g class="city minor"><circle class="dot" cx="434.5" cy="235.6" r="3"/><text x="444.5" y="239.6" text-anchor="start">Villepinte</text></g><g class="city minor"><circle class="dot" cx="304.7" cy="169.8" r="3"/><text x="314.7" y="173.8" text-anchor="start">Gonesse</text></g><g class="city minor"><circle class="dot" cx="208.8" cy="149.2" r="3"/><text x="198.8" y="153.2" text-anchor="end">Sarcelles</text></g><g class="city minor"><circle class="dot" cx="396.7" cy="134.8" r="3"/><text x="396.7" y="123.8" text-anchor="middle">Roissy-en-France</text></g><g class="city minor"><circle class="dot" cx="296.6" cy="429.0" r="3"/><text x="306.6" y="433.0" text-anchor="start">Montreuil</text></g><g class="city minor"><circle class="dot" cx="445.3" cy="455.7" r="3"/><text x="445.3" y="474.7" text-anchor="middle">Noisy-le-Grand</text></g><g class="city minor"><circle class="dot" cx="149.3" cy="324.1" r="3"/><text x="149.3" y="343.1" text-anchor="middle">Saint-Ouen</text></g><a href="/electricien-drancy"><g class="city"><circle class="dot" cx="300.0" cy="300.0" r="4.6"/><text x="313.0" y="305.0" text-anchor="start">Drancy</text></g></a><a href="/electricien-le-blanc-mesnil"><g class="city base"><circle class="dot" cx="321.5" cy="269.3" r="4.6"/><text x="321.5" y="257.3" text-anchor="middle">Le Blanc-Mesnil</text></g></a><a href="/electricien-bobigny"><g class="city"><circle class="dot" cx="292.3" cy="331.1" r="4.6"/><text x="292.3" y="352.1" text-anchor="middle">Bobigny</text></g></a><a href="/electricien-aulnay-sous-bois"><g class="city"><circle class="dot" cx="369.5" cy="269.8" r="4.6"/><text x="379.5" y="286.8" text-anchor="start">Aulnay-sous-Bois</text></g></a><a href="/electricien-le-bourget"><g class="city"><circle class="dot" cx="273.4" cy="276.1" r="4.6"/><text x="265.4" y="268.1" text-anchor="end">Le Bourget</text></g></a><a href="/electricien-saint-denis"><g class="city"><circle class="dot" cx="180.9" cy="274.3" r="4.6"/><text x="170.9" y="278.3" text-anchor="end">Saint-Denis</text></g></a><g class="legend"><rect x="18" y="548" width="236" height="34" rx="17"/><circle class="lg-base" cx="38" cy="565" r="5"/><text x="52" y="569">Base BR ELEC · Le Blanc-Mesnil</text></g></svg>
+      <figcaption>Carte schématique, positions approximatives</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section id="tarifs">
+  <div class="wrap pf-grid">
+    <div class="reveal">
+      <div class="eyebrow"><span class="dot"></span>Tarifs</div>
+      <h2>Une idée du prix avant même d'appeler</h2>
+      <p class="lead-sm">Les tarifs de base sont affichés. Pour tout le reste, le devis gratuit fixe le montant exact avant l'intervention.</p>
+      <div class="price-list">
+        <div class="price-row"><div><b>Devis</b><span>Sans engagement, avant toute intervention</span></div><div class="amount free">Gratuit</div></div>
+        <div class="price-row"><div><b>Forfait diagnostic</b><span>Recherche de panne, remise en service si possible</span></div><div class="amount">130 €</div></div>
+        <div class="price-row"><div><b>Déplacement</b><span>Pour une intervention à proximité</span></div><div class="amount">20 €</div></div>
+        <div class="price-row"><div><b>Tableau, rénovation, mise aux normes</b><span>Selon l'installation et la surface</span></div><div class="amount">Sur devis</div></div>
+        <div class="price-row"><div><b>Commerces, bureaux, tertiaire</b><span>Éclairage, distribution, réseau</span></div><div class="amount">Sur étude</div></div>
+      </div>
+      <p class="price-note">Prix nets, TVA non applicable (art. 293 B du CGI).</p>
+      <a class="btn btn-primary" href="/contact">Obtenir mon devis gratuit</a>
+    </div>
+    <div class="reveal">
+      <div class="eyebrow"><span class="dot"></span>Questions fréquentes</div>
+      <h2>Les réponses avant le premier appel</h2>
+      <div class="faq"><details open><summary>Le devis est-il vraiment gratuit ?</summary><p>Oui. Le devis est gratuit, sans engagement, et remis avant toute intervention. Une photo du tableau ou de la panne suffit souvent pour une première estimation.</p></details><details><summary>Intervenez-vous en urgence ?</summary><p>BR ELEC intervient du lundi au samedi, et en urgence selon la disponibilité du moment. Pour une panne, appelez directement le 06 25 34 76 54 : c'est le moyen le plus rapide.</p></details><details><summary>Dans quelles villes vous déplacez-vous ?</summary><p>Dans un rayon de 15 km autour de Drancy : Le Blanc-Mesnil, Bobigny, Aulnay-sous-Bois, Le Bourget, Saint-Denis, le nord-est de Paris. Au-delà, l'intervention se fait sur devis.</p></details><details><summary>Mon tableau est ancien : faut-il tout refaire ?</summary><p>Pas forcément. Un diagnostic sur place, ou déjà une photo, permet de dire si le remplacement du tableau suffit ou si certains circuits doivent être repris. Vous recevez un devis détaillé avant de décider.</p></details><details><summary>Les travaux sont-ils facturés et assurés ?</summary><p>Oui. Une facture est fournie systématiquement, les travaux sont réalisés selon la norme NF C 15-100 et l'entreprise est couverte par une assurance responsabilité civile professionnelle.</p></details><details><summary>Travaillez-vous pour les commerces et les bureaux ?</summary><p>Oui : éclairage, tableaux et distribution électrique, câblage réseau. Un échange sur place permet de chiffrer le projet avant travaux.</p></details></div>
     </div>
   </div>
 </section>
 
 <section>
   <div class="wrap">
-    <div class="cta-band">
+    <div class="cta-band reveal">
       <div class="inner">
         <div>
-          <h2>Une prestation qui ne figure pas ici ?</h2>
-          <p>La plupart des travaux d'électricité générale peuvent être pris en charge — décrivez votre besoin.</p>
+          <h2>Une panne, un projet ? Un seul appel suffit.</h2>
+          <p>Disponible du lundi au samedi, urgences selon disponibilité.</p>
         </div>
         <div class="actions">
-          <a href="contact.html" class="btn btn-primary">Demander un devis</a>
-          <a href="tel:+33625347654" class="btn btn-ghost" style="border-color:#2A3E56;color:white;">06 25 34 76 54</a>
+          <a href="tel:+33625347654" class="btn btn-primary">06 25 34 76 54</a>
+          <a href="/contact" class="btn btn-ghost" style="border-color:#47617F;color:white;">Demander un devis</a>
         </div>
       </div>
     </div>
   </div>
 </section>
 
+</main>
+
 <footer class="site">
   <div class="wrap">
     <div class="footer-grid">
       <div>
-        <img src="assets/logo-full.svg" alt="BR ELEC" style="height:44px; margin-bottom:6px;">
-        <p class="tagline">Artisan électricien basé à Drancy (93), interventions particuliers et professionnels en Île-de-France.</p>
+        <img class="brand-foot" src="/assets/logo-full-white.svg" alt="BR ELEC" width="158" height="44">
+        <p class="tagline">Artisan électricien à Drancy, au Blanc-Mesnil et dans un rayon de 15 km. Particuliers et professionnels.</p>
       </div>
       <div>
-        <h4>Navigation</h4>
-        <ul>
-          <li><a href="index.html">Accueil</a></li>
-          <li><a href="services.html">Prestations</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="mentions-legales.html">Mentions légales</a></li>
-        </ul>
+        <h2 class="foot-h">Navigation</h2>
+        <ul><li><a href="/">Accueil</a></li><li><a href="/services">Prestations</a></li><li><a href="/realisations">Réalisations</a></li><li><a href="/contact">Contact</a></li><li><a href="/mentions-legales">Mentions légales</a></li></ul>
       </div>
       <div>
-        <h4>Contact</h4>
+        <h2 class="foot-h">Zones d'intervention</h2>
+        <ul><li><a href="/electricien-drancy">Électricien à Drancy</a></li><li><a href="/electricien-le-blanc-mesnil">Électricien au Blanc-Mesnil</a></li><li><a href="/electricien-bobigny">Électricien à Bobigny</a></li><li><a href="/electricien-aulnay-sous-bois">Électricien à Aulnay-sous-Bois</a></li><li><a href="/electricien-le-bourget">Électricien au Bourget</a></li><li><a href="/electricien-saint-denis">Électricien à Saint-Denis</a></li></ul>
+      </div>
+      <div>
+        <h2 class="foot-h">Contact</h2>
         <ul>
           <li><a href="tel:+33625347654">06 25 34 76 54</a></li>
           <li><a href="mailto:contact@brelec.fr">contact@brelec.fr</a></li>
-          <li>Drancy (93700) &amp; Île-de-France</li>
+          <li><a href="https://wa.me/33625347654?text=Bonjour%2C%20je%20souhaite%20un%20devis%20pour%20%3A%20" rel="noopener">WhatsApp</a></li>
+          <li>Lundi – samedi</li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
       <span>© 2026 BR ELEC — Artisan électricien · SIRET 788 651 701 00021</span>
-      <span><a href="mentions-legales.html">Mentions légales</a></span>
+      <span><a href="/mentions-legales">Mentions légales</a></span>
     </div>
   </div>
 </footer>
 
+<div class="mbar" role="navigation" aria-label="Actions rapides">
+  <a class="mbar-call" href="tel:+33625347654"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>Appeler</a>
+  <a href="https://wa.me/33625347654?text=Bonjour%2C%20je%20souhaite%20un%20devis%20pour%20%3A%20" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 21l2.1-5.7A8.4 8.4 0 1 1 21 11.5z"/></svg>WhatsApp</a>
+  <a class="mbar-quote" href="/contact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M8 13h8M8 17h5"/></svg>Devis</a>
+</div>
+
+<script src="/assets/site.js?v=4" defer></script>
 </body>
 </html>
